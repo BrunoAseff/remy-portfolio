@@ -11,49 +11,6 @@
     />
   </head>
   <body>
-    <div class="preloader">
-      <div class="preloader-icon">
-        <svg width="80" height="80" viewBox="0 0 100 100">
-          <circle
-            cx="50"
-            cy="50"
-            r="45"
-            stroke="var(--accent-gold)"
-            stroke-width="5"
-            fill="none"
-            stroke-dasharray="283"
-            stroke-dashoffset="283"
-            class="preloader-circle"
-          >
-            <animate
-              attributeName="stroke-dashoffset"
-              dur="2s"
-              from="283"
-              to="0"
-              fill="freeze"
-            />
-            <animate
-              attributeName="stroke"
-              dur="2s"
-              values="var(--accent-gold);var(--accent-gold-hover);var(--accent-gold)"
-              repeatCount="indefinite"
-            />
-          </circle>
-          <text
-            x="50%"
-            y="50%"
-            dy=".3em"
-            text-anchor="middle"
-            fill="var(--accent-gold)"
-            font-size="12px"
-            font-family="var(--font-primary-headings)"
-          >
-            Remy
-          </text>
-        </svg>
-      </div>
-    </div>
-
     <header class="hero">
       <div class="hero-background-animation">
         <div class="wisp wisp1"></div>
@@ -328,13 +285,6 @@
     </footer>
 
     <script>
-      window.addEventListener('load', () => {
-        const preloader = document.querySelector('.preloader');
-        if (preloader) {
-          preloader.classList.add('preloader-hidden');
-        }
-      });
-
       const animatedElements = document.querySelectorAll(
         '.animate-on-scroll, .animate-on-load'
       );
